@@ -1,4 +1,4 @@
-# fernando-portfolio
+# Portfolio Modelo Pessoal
 
 Portfólio pessoal de Fernando Johansen — um site inspirado em terminal, com temática Arch Linux e paleta Matrix Code Green.
 
