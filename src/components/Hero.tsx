@@ -11,9 +11,10 @@ export default function Hero() {
       </div>
       <h1>Oi, eu sou o Fernando.</h1>
       <p className="role">
-        Sou <b>Desenvolvedor Full Stack</b>, focado em Python, FastAPI, React e
-        PostgreSQL. Construo backends escaláveis, APIs REST e frontends
-        responsivos, do zero ao deploy.
+        Sou <b>Desenvolvedor Full Stack</b> e <b>AI Engineer</b>, focado em
+        Python, FastAPI, React e PostgreSQL. Construo aplicações do zero ao
+        deploy, coloco LLMs para trabalhar dentro delas e trato segurança como
+        parte do projeto, não como etapa final.
       </p>
       <Button href="#contato">Falar comigo</Button>
 

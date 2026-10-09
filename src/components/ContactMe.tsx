@@ -10,7 +10,7 @@ export default function ContactMe() {
       <TerminalCommand command="mail --compose" />
       <div className="section-head">
         <h2>Vamos conversar</h2>
-        <p>Aberto a oportunidades como desenvolvedor full stack.</p>
+        <p>Aberto a oportunidades como AI Engineer e desenvolvedor full stack.</p>
       </div>
 
       <Button href={`mailto:${EMAIL}`}>Falar comigo</Button>

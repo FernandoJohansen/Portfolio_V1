@@ -16,8 +16,10 @@ const rows: InfoRow[] = [
   { k: 'Host', v: 'Corumbá – MS, Brasil' },
   { k: 'Shell', v: 'zsh' },
   { k: 'WM', v: 'i3wm' },
-  { k: 'Role', v: 'Full Stack Developer' },
+  { k: 'Role', v: 'Full Stack Developer · AI Engineer' },
   { k: 'Stack', v: 'Python, FastAPI, React, PostgreSQL' },
+  { k: 'AI', v: 'Claude, OpenAI, Gemini, Ollama, Whisper' },
+  { k: 'Sec', v: 'Pentest, Nmap, BlackArch' },
   { k: 'Langs', v: 'PT-BR (nativo), EN (C2)' },
 ]
 

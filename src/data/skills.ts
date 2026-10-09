@@ -19,7 +19,10 @@ export const skills: Skill[] = [
   { name: 'Git / GitHub', abbr: 'Gh', bg: '#24292e', color: '#fff' },
   { name: 'Docker', abbr: 'Dk', bg: '#2496ED', color: '#fff' },
   { name: 'Linux / WSL', abbr: 'Lx', bg: '#FCC624', color: '#222' },
-  { name: 'ESP32', abbr: 'Es', bg: '#E7352C', color: '#fff' },
-  { name: 'C / C++', abbr: 'C+', bg: '#00599C', color: '#fff' },
+  { name: 'Redis / Celery', abbr: 'Rd', bg: '#DC382D', color: '#fff' },
+  { name: 'LLM APIs', abbr: 'AI', bg: '#D97757', color: '#fff' },
+  { name: 'Ollama', abbr: 'Ol', bg: '#000000', color: '#fff' },
+  { name: 'Whisper', abbr: 'Wh', bg: '#74AA9C', color: '#0b2420' },
   { name: 'Nmap / NSE', abbr: 'Nm', bg: '#4682B4', color: '#fff' },
+  { name: 'JWT / AuthN', abbr: 'Jw', bg: '#D63AFF', color: '#fff' },
 ]
