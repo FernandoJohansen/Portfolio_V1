@@ -1,25 +1,28 @@
 import TerminalCommand from './TerminalCommand'
 import Terminal from './Terminal'
 import { education } from '../data/education'
+import { strings } from '../i18n/strings'
+import { useLang } from '../i18n/context'
 
 export default function Education() {
+  const { t } = useLang()
   return (
     <section id="formacao">
-      <TerminalCommand command="cat formacao.log" />
+      <TerminalCommand command={t(strings.education.command)} />
       <div className="section-head">
-        <h2>Formação acadêmica</h2>
+        <h2>{t(strings.education.title)}</h2>
       </div>
 
-      <Terminal filename="formacao.log">
+      <Terminal filename={t(strings.education.file)}>
         {education.map((entry, i) => (
-          <div key={entry.course} style={{ marginTop: i === 0 ? 0 : 10 }}>
+          <div key={entry.course.pt} style={{ marginTop: i === 0 ? 0 : 10 }}>
             <div className="out">
-              {entry.course} <span className="muted">— {entry.institution}</span>
+              {t(entry.course)} <span className="muted">— {entry.institution}</span>
             </div>
             <div className="muted">
-              {entry.period ? `${entry.period} · ` : ''}
+              {entry.period ? `${t(entry.period)} · ` : ''}
               <span style={entry.done ? { color: 'var(--accent)' } : undefined}>
-                {entry.status}
+                {t(entry.status)}
               </span>
             </div>
           </div>

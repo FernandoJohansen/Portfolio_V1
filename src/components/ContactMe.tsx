@@ -1,19 +1,22 @@
 import TerminalCommand from './TerminalCommand'
 import Button from './Button'
 import SocialLink from './SocialLink'
+import { strings } from '../i18n/strings'
+import { useLang } from '../i18n/context'
 
 const EMAIL = 'fernando.johansenn@gmail.com'
 
 export default function ContactMe() {
+  const { t } = useLang()
   return (
     <section id="contato">
       <TerminalCommand command="mail --compose" />
       <div className="section-head">
-        <h2>Vamos conversar</h2>
-        <p>Aberto a oportunidades como AI Engineer e desenvolvedor full stack.</p>
+        <h2>{t(strings.contact.title)}</h2>
+        <p>{t(strings.contact.subtitle)}</p>
       </div>
 
-      <Button href={`mailto:${EMAIL}`}>Falar comigo</Button>
+      <Button href={`mailto:${EMAIL}`}>{t(strings.contact.cta)}</Button>
 
       <div className="contact-links">
         <SocialLink href="https://github.com/FernandoJohansen">GitHub</SocialLink>

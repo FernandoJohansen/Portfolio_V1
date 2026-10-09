@@ -1,29 +1,42 @@
+import type { L } from '../i18n/strings'
+
 export interface EducationEntry {
-  course: string
+  course: L
   institution: string
-  status: string
-  period?: string
+  status: L
+  period?: L
   done?: boolean
 }
 
+const inProgress: L = { pt: 'em andamento', en: 'in progress' }
+
 export const education: EducationEntry[] = [
   {
-    course: 'Técnico em Tecnologia da Informação',
+    course: {
+      pt: 'Técnico em Tecnologia da Informação',
+      en: 'Information Technology Technician',
+    },
     institution: 'IFMS',
-    period: 'Jun 2023 – Dez 2024',
-    status: 'concluído',
+    period: { pt: 'Jun 2023 – Dez 2024', en: 'Jun 2023 – Dec 2024' },
+    status: { pt: 'concluído', en: 'completed' },
     done: true,
   },
   {
-    course: 'Tecnólogo em Análise e Desenvolvimento de Sistemas',
+    course: {
+      pt: 'Tecnólogo em Análise e Desenvolvimento de Sistemas',
+      en: 'Associate Degree in Systems Analysis and Development',
+    },
     institution: 'UNIFAEL',
-    status: 'em andamento',
+    status: inProgress,
     done: false,
   },
   {
-    course: 'Bacharelado em Segurança Digital',
+    course: {
+      pt: 'Bacharelado em Segurança Digital',
+      en: "Bachelor's Degree in Digital Security",
+    },
     institution: 'UNIFAEL',
-    status: 'em andamento',
+    status: inProgress,
     done: false,
   },
 ]
